@@ -11,6 +11,10 @@ path = "src/main.rs"
 name = "client"
 path = "src/client.rs"
 
+[[bin]]
+name = "nogrpc"
+path = "src/protobuf_serialization_without_grpc.rs"
+
 [dependencies]
 tonic = "0.9"
 prost = "0.11"
@@ -19,3 +23,4 @@ base64 = "0.22.1"
 
 [build-dependencies]
 tonic-build = "0.9"
+prost-build = "0.12"
